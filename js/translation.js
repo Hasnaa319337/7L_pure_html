@@ -1,7 +1,7 @@
 const exampleElement = document.getElementById("body");
 
-const en = document.getElementById("enBtn");
-const ar = document.getElementById("arBtn");
+const enBtn = document.getElementById("enBtn");
+const arBtn = document.getElementById("arBtn");
 
 const firstChange = document.getElementById("firstChange");
 const secondChange = document.getElementById("secondChange");
@@ -96,8 +96,10 @@ languageSelect.addEventListener("change", function () {
   if (localStorage.getItem("language") === "ar") {
     // arabic code here
 
-    ar.classList.add("hide_icon");
-    en.classList.add("show_icon");
+    // arBtn.classList.add("hide_icon");
+    // enBtn.classList.add("show_icon");
+    document.getElementById('next').classList.add('hide_icon');
+    document.getElementById('prev').classList.remove('hide_icon');
 
     exampleElement.classList.remove("ltr");
     exampleElement.classList.add("rtl");
@@ -196,6 +198,8 @@ languageSelect.addEventListener("change", function () {
   } else {
     // localStorage.setItem("language", languageSelect.value);
     // english code here
+    document.getElementById('prev').classList.add('hide_icon');
+    document.getElementById('next').classList.remove('hide_icon');
 
     exampleElement.classList.remove("rtl");
     exampleElement.classList.add("ltr");

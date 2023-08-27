@@ -635,7 +635,20 @@ input::placeholder {
   bottom: 4px;
   transform: rotate(87deg);
 
+ 
+  animation: rotate-animation 5s infinite linear;
+
   left: 19%;
+}
+
+@keyframes rotate-animation {
+	0% {
+		transform: rotate(87deg);
+  }
+ 
+	100% {
+		transform: rotate(110deg);
+	}
 }
 .small_in_en {
   right: -45px;
@@ -696,6 +709,7 @@ input::placeholder {
   padding: 8px;
   margin-top: 40px;
   height: 327px;
+  opacity: .8;
 }
 .projects .text_card div {
   border: 1px solid #fff;
@@ -1078,3 +1092,6 @@ input::placeholder {
     background-color: #fce97f;
   }
 }
+
+
+

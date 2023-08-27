@@ -111,8 +111,8 @@
                   </option>
                 </select>
 
-                <button id="enBtn">English</button>
-                <button id="arBtn">العربية</button>
+                <!-- <button id="enBtn">English</button>
+                <button id="arBtn">العربية</button> -->
               </li>
             </ul>
           </div>
@@ -416,7 +416,7 @@
     <div class="customers">
       <h3 class="main_text" id="customerTitle">Customers Opinions</h3>
 
-      <div class="slider_container">
+      <div class="slider_container" id="slider_container">
         <!-- <div class="inner_slider_container"> -->
         <div class="box" id="item1">
           <div class="customer_info">
@@ -702,7 +702,8 @@
         <!-- </div> -->
 
         <a
-          class="prev"
+        id="prev"
+          class="prev hide_icon"
           onclick="goPrevious()"
           style="
             position: absolute;
@@ -711,7 +712,7 @@
           "
           >❮</a
         >
-        <a class="next" onClick="goNext()">❯</a>
+        <a id="next" class="next" onClick="goNext()">❯</a>
       </div>
     </div>
     <!-- End:: cusomers section -->
