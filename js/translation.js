@@ -10,6 +10,7 @@ const small_rectangle = document.getElementById("small_rectangle");
 const second_small_rectangle = document.getElementById(
   "second_small_rectangle"
 );
+const first_inner_image = document.getElementById("first_inner_image");
 const hidden_border = document.getElementById("hidden_border");
 const line = document.getElementById("line");
 const customer_image = document.getElementById("customer_image");
@@ -38,6 +39,7 @@ const contact = document.getElementById("contact");
 /* Start:: Hero Section */
 const quality = document.getElementById("quality");
 const more = document.getElementById("more");
+const second_inner_image = document.getElementById("second_inner_image");
 /* End:: Hero Section */
 
 /* Start:: About Section */
@@ -98,8 +100,8 @@ languageSelect.addEventListener("change", function () {
 
     // arBtn.classList.add("hide_icon");
     // enBtn.classList.add("show_icon");
-    document.getElementById('next').classList.add('hide_icon');
-    document.getElementById('prev').classList.remove('hide_icon');
+    document.getElementById("next").classList.add("hide_icon");
+    document.getElementById("prev").classList.remove("hide_icon");
 
     exampleElement.classList.remove("ltr");
     exampleElement.classList.add("rtl");
@@ -123,7 +125,14 @@ languageSelect.addEventListener("change", function () {
     customer_image3.classList.add("dir_right");
 
     customer_image4.classList.remove("dir_left");
+
     customer_image4.classList.add("dir_right");
+
+    first_inner_image.classList.remove("top_en");
+    first_inner_image.classList.add("top_ar");
+
+    second_inner_image.classList.remove("top_en");
+    second_inner_image.classList.add("top_ar");
 
     svgCart.classList.add("rotate");
     svgPos.classList.add("rotate");
@@ -145,6 +154,7 @@ languageSelect.addEventListener("change", function () {
     /* Start:: Hero Section */
     quality.textContent = "كفاءة عمل منشأتك اعلي مع حل";
     more.textContent = "إقرأ المزيد";
+
     /* End:: Hero Section */
 
     // Start:: About Translation
@@ -198,8 +208,8 @@ languageSelect.addEventListener("change", function () {
   } else {
     // localStorage.setItem("language", languageSelect.value);
     // english code here
-    document.getElementById('prev').classList.add('hide_icon');
-    document.getElementById('next').classList.remove('hide_icon');
+    document.getElementById("prev").classList.add("hide_icon");
+    document.getElementById("next").classList.remove("hide_icon");
 
     exampleElement.classList.remove("rtl");
     exampleElement.classList.add("ltr");
@@ -224,6 +234,10 @@ languageSelect.addEventListener("change", function () {
 
     small_rectangle.classList.remove("small_in_en");
     second_small_rectangle.classList.remove("second_small_in_en");
+    first_inner_image.classList.remove("top_ar");
+    first_inner_image.classList.add("top_en");
+    second_inner_image.classList.remove("top_ar");
+    second_inner_image.classList.add("top_en");
 
     svgCart.classList.remove("rotate");
     svgPos.classList.remove("rotate");

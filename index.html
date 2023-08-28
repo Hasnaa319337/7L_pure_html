@@ -110,9 +110,6 @@
                     العربية
                   </option>
                 </select>
-
-                <!-- <button id="enBtn">English</button>
-                <button id="arBtn">العربية</button> -->
               </li>
             </ul>
           </div>
@@ -141,21 +138,22 @@
               هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
               سيلهي القارئ
             </p>
-            <button class="global_btn  button button-2" id="more">
+            <button class="global_btn button button-2" id="more">
               Read More
             </button>
-            
           </div>
           <div class="col col-lg-7 col-sm-12">
             <div class="image">
               <img src="images/hero_cut.png" alt="" />
               <img
+              id="first_inner_image"
                 class="inner_image first_inner_image"
                 src="images/cut.png"
                 alt=""
               />
               <img
-                class="inner_image second_inner_image"
+                id="second_inner_image"
+                class="inner_image second_inner_image "
                 src="images/image 5.png"
                 alt=""
               />
@@ -357,9 +355,22 @@
             <div
               id="firstChange"
               class="col col-lg-4 col-md-12 col-sm-12 pro_div"
-              style="position: absolute; top: -20px; right: -4px"
+              style="
+                position: absolute;
+                top: -20px;
+                right: -4px;
+                z-index: 22222;
+              "
             >
-              <div class="image">
+              <div
+                class="image sImageL"
+                style="
+                  z-index: 0;
+                  height: 366px;
+                  width: 368px;
+                  position: absolute;
+                "
+              >
                 <img
                   src="images/image 5.png"
                   alt=""
@@ -368,18 +379,67 @@
                 <img src="images/image 6.png" alt="" />
                 <img src="images/image 7.png" alt="" />
               </div>
+              <div class="image fImageL" style="z-index: 1; position: absolute">
+                <img
+                  src="images/screencapture-efatorh-2023-06-20-21_59_00 1.png"
+                  alt=""
+                  style="
+                    border-radius: 0 146px 0 0;
+                    height: 366px;
+                    width: 368px;
+                  "
+                />
+              </div>
             </div>
+
             <div
               class="col col-lg-4 col-md-12 col-sm-12 pro_div"
               style="position: absolute; left: 32%; top: 2px"
             >
               <div class="text_card">
                 <div>
+                 <div style="display: none;">
                   <h6 id="cardNet"></h6>
                   <p>
                     هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة
                     ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص
                   </p>
+                 </div>
+                  <div
+                    class="image fImage_in_text"
+                    style="
+                      z-index: -1;
+                      position: absolute;
+                      height: 300px;
+                      width: 350px;
+                    "
+                  >
+                    <img
+                      src="images/screencapture-efatorh-2023-06-20-21_59_00 1.png"
+                      alt=""
+                      style="height: 300px; width: 350px"
+                    />
+                  </div>
+                  <div
+                    class="image sImage_in_text"
+                    style="z-index: 0; height: 300px; width: 350px"
+                  >
+                    <img
+                      src="images/image 5.png"
+                      alt=""
+                      style="height: 108px; width: 100%"
+                    />
+                    <img
+                      src="images/image 6.png"
+                      alt=""
+                      style="height: 108px; width: 100%"
+                    />
+                    <img
+                      src="images/image 7.png"
+                      alt=""
+                      style="height: 108px; width: 100%"
+                    />
+                  </div>
                 </div>
                 <button class="global_btn" id="projects_more">Read More</button>
               </div>
@@ -394,9 +454,22 @@
                 z-index: 99999999 !important;
               "
             >
-              <div class="image">
+              <div class="image fImage" style="z-index: 1; position: absolute">
                 <img
                   src="images/screencapture-efatorh-2023-06-20-21_59_00 1.png"
+                  alt=""
+                  style="
+                    border-radius: 0 0 0 146px;
+                    height: 366px;
+                    width: 368px;
+                  "
+                />
+              </div>
+              <div class="image sImage" style="z-index: 0; width: 368px">
+                <img src="images/image 5.png" alt="" />
+                <img src="images/image 6.png" alt="" />
+                <img
+                  src="images/image 7.png"
                   alt=""
                   style="border-radius: 0 0 0 146px"
                 />
@@ -405,7 +478,7 @@
           </div>
           <div
             class="end_carve"
-            style="z-index: 22222222; position: absolute; left: 0; bottom: 0px"
+            style="z-index: 1; position: absolute; left: -10px; bottom: -36px"
           ></div>
         </div>
       </div>
@@ -702,7 +775,7 @@
         <!-- </div> -->
 
         <a
-        id="prev"
+          id="prev"
           class="prev hide_icon"
           onclick="goPrevious()"
           style="
