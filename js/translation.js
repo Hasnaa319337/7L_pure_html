@@ -3,8 +3,6 @@ const exampleElement = document.getElementById("body");
 const enBtn = document.getElementById("enBtn");
 const arBtn = document.getElementById("arBtn");
 
-const firstChange = document.getElementById("firstChange");
-const secondChange = document.getElementById("secondChange");
 
 const small_rectangle = document.getElementById("small_rectangle");
 const second_small_rectangle = document.getElementById(
@@ -51,7 +49,7 @@ const more_about = document.getElementById("more_about");
 /* Start:: Projects Section */
 const projects_title = document.getElementById("projects_title");
 const projects_more = document.getElementById("projects_more");
-const cardNet = document.getElementById("cardNet");
+
 /* End:: Projects Section */
 
 /* Start:: customers Section */
@@ -106,8 +104,7 @@ languageSelect.addEventListener("change", function () {
     exampleElement.classList.remove("ltr");
     exampleElement.classList.add("rtl");
 
-    firstChange.classList.add("changeTop");
-    secondChange.classList.add("changeAnotherTop");
+  
 
     small_rectangle.classList.add("small_in_en");
     second_small_rectangle.classList.add("second_small_in_en");
@@ -166,7 +163,7 @@ languageSelect.addEventListener("change", function () {
     // Start:: projects Section
     projects_title.textContent = "مشاريعنا";
     projects_more.textContent = "إقرأ المزيد";
-    cardNet.textContent = "كارد نت";
+
     // End:: projects Section
 
     // Start:: customers Section
@@ -229,8 +226,6 @@ languageSelect.addEventListener("change", function () {
     customer_image4.classList.remove("dir_right");
     customer_image4.classList.add("dir_left");
 
-    firstChange.classList.remove("changeTop");
-    secondChange.classList.remove("changeAnotherTop");
 
     small_rectangle.classList.remove("small_in_en");
     second_small_rectangle.classList.remove("second_small_in_en");
@@ -272,7 +267,7 @@ languageSelect.addEventListener("change", function () {
     // Start:: projects Section
     projects_title.textContent = "Our Projects";
     projects_more.textContent = "More";
-    cardNet.textContent = "Card";
+  
     // End:: projects Section
 
     /* Start:: Services Sections */

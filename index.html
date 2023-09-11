@@ -5,8 +5,18 @@
     <link rel="icon" href="images/Group 2222222 1.png" />
     <title>7L Website</title>
 
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <!-- font link -->
     <link
@@ -144,16 +154,16 @@
           </div>
           <div class="col col-lg-7 col-sm-12">
             <div class="image">
-              <img src="images/hero_cut.png" alt="" />
+              <img src="images/hero_cut.svg" alt="" />
               <img
-              id="first_inner_image"
+                id="first_inner_image"
                 class="inner_image first_inner_image"
                 src="images/cut.png"
                 alt=""
               />
               <img
                 id="second_inner_image"
-                class="inner_image second_inner_image "
+                class="inner_image second_inner_image"
                 src="images/image 5.png"
                 alt=""
               />
@@ -240,7 +250,7 @@
         <div class="row">
           <div
             class="col col-lg-6 col-sm-12 col-xs-12"
-            style="border-radius: 0 0 0 435px"
+            style="border-radius: 0 0 0 435px; margin-bottom: 60px"
           >
             <div class="hidden_border" id="hidden_border"></div>
             <div class="image">
@@ -254,17 +264,12 @@
               ></div>
             </div>
           </div>
-          <div class="col col-lg-6 col-sm-12 col-xs-12">
+          <div
+            class="col col-lg-6 col-sm-12 col-xs-12"
+            style="margin-bottom: 60px"
+          >
             <div class="text">
-              <div
-                style="
-                  text-align: start;
-                  margin-bottom: 15px;
-                  font-weight: 700;
-                  font-size: 56.66px;
-                  margin-bottom: 15px;
-                "
-              >
+              <div style="text-align: start">
                 <h3
                   class="main_text"
                   id="berif"
@@ -331,8 +336,8 @@
                 </li>
               </ul>
               <button
-                class="global_btn"
-                style="background: #000; margin-top: 68px"
+                class="global_btn button button-3"
+                style="margin-top: 68px"
                 id="more_about"
               >
                 Read More
@@ -344,146 +349,46 @@
     </div>
     <!-- End:: About Section -->
 
-    <!-- Start:: Projects Section -->
+    <!-- Start:: projects -->
     <div class="projects">
-      <div class="container">
-        <h3 class="main_text" id="projects_title">Our Projects</h3>
-
-        <div class="cards" style="position: relative">
-          <div class="start_carve"></div>
-          <div class="row">
-            <div
-              id="firstChange"
-              class="col col-lg-4 col-md-12 col-sm-12 pro_div"
-              style="
-                position: absolute;
-                top: -20px;
-                right: -4px;
-                z-index: 22222;
-              "
-            >
-              <div
-                class="image sImageL"
-                style="
-                  z-index: 0;
-                  height: 366px;
-                  width: 368px;
-                  position: absolute;
-                "
-              >
-                <img
-                  src="images/image 5.png"
-                  alt=""
-                  style="border-radius: 0 146px 0 0"
-                />
-                <img src="images/image 6.png" alt="" />
-                <img src="images/image 7.png" alt="" />
-              </div>
-              <div class="image fImageL" style="z-index: 1; position: absolute">
+      <section id="slider" class="pt-5">
+        <div class="container">
+          <h3 class="main_text" id="projects_title">Our Projects</h3>
+          <div class="slider">
+            <div class="start_carve"></div>
+            <div class="owl-carousel">
+              <div class="slider-card first_slider_card">
                 <img
                   src="images/screencapture-efatorh-2023-06-20-21_59_00 1.png"
                   alt=""
-                  style="
-                    border-radius: 0 146px 0 0;
-                    height: 366px;
-                    width: 368px;
-                  "
                 />
               </div>
-            </div>
-
-            <div
-              class="col col-lg-4 col-md-12 col-sm-12 pro_div"
-              style="position: absolute; left: 32%; top: 2px"
-            >
-              <div class="text_card">
-                <div>
-                 <div style="display: none;">
-                  <h6 id="cardNet"></h6>
-                  <p>
-                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة
-                    ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص
-                  </p>
-                 </div>
-                  <div
-                    class="image fImage_in_text"
-                    style="
-                      z-index: -1;
-                      position: absolute;
-                      height: 300px;
-                      width: 350px;
-                    "
-                  >
-                    <img
-                      src="images/screencapture-efatorh-2023-06-20-21_59_00 1.png"
-                      alt=""
-                      style="height: 300px; width: 350px"
-                    />
-                  </div>
-                  <div
-                    class="image sImage_in_text"
-                    style="z-index: 0; height: 300px; width: 350px"
-                  >
-                    <img
-                      src="images/image 5.png"
-                      alt=""
-                      style="height: 108px; width: 100%"
-                    />
-                    <img
-                      src="images/image 6.png"
-                      alt=""
-                      style="height: 108px; width: 100%"
-                    />
-                    <img
-                      src="images/image 7.png"
-                      alt=""
-                      style="height: 108px; width: 100%"
-                    />
-                  </div>
+              <div class="pro_div">
+                <div class="slider-card first_slider_card">
+               
+                   <img src="images/flutter.png" alt="">
                 </div>
-                <button class="global_btn" id="projects_more">Read More</button>
+                
+
+              </div>
+              <div class="slider-card first_slider_card">
+                <div class="image">
+                
+                  <img src="images/pos.png" />
+                </div>
               </div>
             </div>
+  
             <div
-              id="secondChange"
-              class="col col-lg-4 col-md-12 col-sm-12 pro_div"
-              style="
-                position: absolute;
-                left: 9px;
-                top: -20px;
-                z-index: 99999999 !important;
-              "
-            >
-              <div class="image fImage" style="z-index: 1; position: absolute">
-                <img
-                  src="images/screencapture-efatorh-2023-06-20-21_59_00 1.png"
-                  alt=""
-                  style="
-                    border-radius: 0 0 0 146px;
-                    height: 366px;
-                    width: 368px;
-                  "
-                />
-              </div>
-              <div class="image sImage" style="z-index: 0; width: 368px">
-                <img src="images/image 5.png" alt="" />
-                <img src="images/image 6.png" alt="" />
-                <img
-                  src="images/image 7.png"
-                  alt=""
-                  style="border-radius: 0 0 0 146px"
-                />
-              </div>
-            </div>
+              class="end_carve"
+              style="position: absolute; left: -10px; bottom: -36px"
+            ></div>
           </div>
-          <div
-            class="end_carve"
-            style="z-index: 1; position: absolute; left: -10px; bottom: -36px"
-          ></div>
         </div>
-      </div>
+      </section>
+      <button class="global_btn" id="projects_more">Read More</button>
     </div>
-    <!-- End:: Projects Section -->
+    <!-- End:: projects -->
 
     <!-- Start:: cusomers section -->
     <div class="customers">
@@ -819,7 +724,9 @@
                 class="col col-lg-12 d-flex"
                 style="justify-content: center; margin-top: 35px"
               >
-                <button class="global_btn" id="send">Send</button>
+                <button class="global_btn button button-2" id="send">
+                  Send
+                </button>
               </div>
             </div>
           </form>
@@ -832,10 +739,7 @@
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div
-            class="col col-lg-6 col-md-3 col-sm-3"
-            style="margin-bottom: 42px"
-          >
+          <div class="col col-lg-6 col-md-6 col-sm-6">
             <div class="first_section">
               <div
                 style="
@@ -857,10 +761,7 @@
               </p>
             </div>
           </div>
-          <div
-            class="col col-lg-2 col-md-3 col-sm-3"
-            style="margin-bottom: 42px; text-align: start"
-          >
+          <div class="col col-lg-2 col-md-6 col-sm-6" style="text-align: start">
             <h4 class="second_head" id="social">Social Media</h4>
             <ul>
               <li>
@@ -922,7 +823,7 @@
             </ul>
           </div>
           <div
-            class="col col-lg-2 col-md-3 col-sm-3"
+            class="col col-lg-2 col-md-6 col-sm-6"
             style="margin-bottom: 42px; text-align: start"
           >
             <h4 class="second_head" id="importantLinks">Important Links</h4>
@@ -990,7 +891,7 @@
             </ul>
           </div>
           <div
-            class="col col-lg-2 col-md-3 col-sm-3"
+            class="col col-lg-2 col-md-6 col-sm-6"
             style="margin-bottom: 42px; text-align: start"
           >
             <h4 class="second_head" id="ourProjects">Our Projects</h4>
@@ -1044,27 +945,34 @@
           </div>
         </div>
       </div>
-      <p id="copyRight">All rights reserved to 7L Soft Company &copy 2023</p>
+      <p id="copyRight" style="padding: 10px 0">
+        All rights reserved to 7L Soft Company &copy 2023
+      </p>
     </div>
     <!-- End :: Footer Section -->
+
+    <!-- jQuery library -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/translation.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+      function setLang(lang) {
+        localStorage.setItem("lang", lang);
+        document.querySelector("html").setAttribute("lang", lang);
+      }
+
+      document
+        .querySelector("#language-select")
+        .addEventListener("change", function () {
+          setLang(this.value);
+        });
+    </script>
   </body>
-  <!-- jQuery library -->
-
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="./js/js.js"></script>
-  <script src="./js/translation.js"></script>
-  <script src="./js/bootstrap.bundle.min.js"></script>
-
-  <script>
-    function setLang(lang) {
-      localStorage.setItem("lang", lang);
-      document.querySelector("html").setAttribute("lang", lang);
-    }
-
-    document
-      .querySelector("#language-select")
-      .addEventListener("change", function () {
-        setLang(this.value);
-      });
-  </script>
 </html>
