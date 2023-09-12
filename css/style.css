@@ -817,12 +817,22 @@ input::placeholder {
 
 .projects {
   position: relative;
+  padding: 0;
+  direction: ltr !important;
+}
+.projectsLine{
+  position: absolute;
+    z-index: -555555;
+    border-bottom: 1px solid #DBDBDB;
+    height: 100%;
+    width: 100%;
+    bottom: 37%;
 }
 .projects .global_btn {
   z-index: 5000000;
   position: absolute;
-  left: 45%;
-  bottom: -43px;
+  left: 44%;
+  bottom: -48px;
 }
 @media (max-width: 900px) {
   .projects .global_btn {
@@ -861,6 +871,7 @@ input::placeholder {
   justify-items: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 0;
 }
 .projects .text_card h6 {
   font-weight: 700;
@@ -1209,12 +1220,12 @@ background-size: inherit;
 }
 .customers .customer_opinion p {
   color: rgba(166, 166, 166, 1);
-  margin: 0 8px;
+  margin: 0 4px;
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
   text-align: start;
-  margin: 0 8px;
+
 }
 @media (max-width: 1400px) {
   .customers .customer_image {
@@ -1343,7 +1354,7 @@ background-size: inherit;
 
 .slider {
   margin-bottom: 30px;
-  position: relative;
+
   height: 400px;
   border: 1px solid rgba(219, 219, 219, 1);
   position: relative;
@@ -1364,8 +1375,8 @@ background-size: inherit;
 .owl-stage .owl-item.active:not(.center) img {
   border-radius: 0 0 0 160px ;
   position: absolute;
-  bottom: 12px;
-  left: 16px;
+  bottom: 34px;
+  left: 12px;
 }
 
 
@@ -1383,10 +1394,12 @@ background-size: inherit;
   padding: 8px;
   margin-top: 40px;
   margin-left: 0;
+  border-radius: 0;
 }
 .slider .owl-item.active.center .slider-card img {
   border: 1px solid #fff;
   padding: 5px;
+  border-radius: 0;
 }
 .slider-card {
   height: 350px;
@@ -1401,14 +1414,14 @@ background-size: inherit;
 }
 .owl-item.active .first_slider_card {
   /* border-radius: 0 0 0 160px; */
-  background-clip: border-box;
+
 }
 .owl-item.cloned.active.center {
   /* border-radius: 0; */
 }
 .owl-item.cloned.active {
   /* border-radius: 0 160px 0 0; */
-  background-clip: border-box;
+
 }
 .slider .first_slider_card img {
   width: 100%;
