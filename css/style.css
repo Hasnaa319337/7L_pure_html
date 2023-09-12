@@ -826,13 +826,13 @@ input::placeholder {
     border-bottom: 1px solid #DBDBDB;
     height: 100%;
     width: 100%;
-    bottom: 37%;
+    bottom: 40%;
 }
 .projects .global_btn {
   z-index: 5000000;
   position: absolute;
-  left: 44%;
-  bottom: -48px;
+  left: 45%;
+  bottom: -50px;
 }
 @media (max-width: 900px) {
   .projects .global_btn {
@@ -1355,7 +1355,7 @@ background-size: inherit;
 .slider {
   margin-bottom: 30px;
 
-  height: 400px;
+  height: 392px;
   border: 1px solid rgba(219, 219, 219, 1);
   position: relative;
   border-radius: 0px 147px 0px 164px;
@@ -1369,13 +1369,13 @@ background-size: inherit;
   border-radius: 0 160px 0 0 !important;
   left: 0px !important;
   position: absolute !important;
-  bottom: 33px !important;
+
 }
 
 .owl-stage .owl-item.active:not(.center) img {
   border-radius: 0 0 0 160px ;
   position: absolute;
-  bottom: 34px;
+
   left: 12px;
 }
 
@@ -1392,8 +1392,8 @@ background-size: inherit;
   text-align: center;
   color: #fff;
   padding: 8px;
-  margin-top: 40px;
-  margin-left: 0;
+  margin-top: 80px;
+  margin-left: 6px;
   border-radius: 0;
 }
 .slider .owl-item.active.center .slider-card img {
@@ -1483,6 +1483,17 @@ background-size: inherit;
   height: 150px;
   width: 150px;
   transform: rotate(91deg);
+}
+.owl-carousel{
+ position: absolute;
+ left: 16px;
+ width: 96%;
+    top: -44px;
+
+}
+.owl-carousel.owl-drag .owl-item{
+  margin-right: 10px !important;
+  /* width: 384.22px !important; */
 }
 .owl-carousel .owl-item img {
   height: 100%;
