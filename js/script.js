@@ -34,7 +34,7 @@ $(document).ready(function () {
     margin: 10,
     nav: true,
     autoplay: false,
-    autoplayTimeout: 4000,
+    autoplayTimeout: 3000,
     autoplayHoverPause: true,
     center: true,
     navText: [
