@@ -1263,7 +1263,7 @@ input::placeholder {
 }
 @media (max-width: 991px) {
   .customers .box {
-    width: 100%;
+    width: 95%;
     display: block !important;
   }
   .customers .customer_info {
