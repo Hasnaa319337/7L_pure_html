@@ -1262,6 +1262,9 @@ input::placeholder {
   }
 }
 @media (max-width: 991px) {
+  .carousel-inner {
+    margin-left: 20px;
+  }
   .customers .box {
     width: 95%;
     display: block !important;
