@@ -18,6 +18,10 @@ select {
   margin: 0;
   padding: 0;
   transition: 0.3s all ease-in-out;
+  outline: 0;
+}
+*:focus{
+  outline: 0;
 }
 body {
   font-family: "Almarai";
