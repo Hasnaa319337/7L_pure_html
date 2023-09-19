@@ -2187,21 +2187,39 @@ input::placeholder {
 }
 @media (max-width: 270px) {
   .hero .image .inner_image {
+    
     top: 36%;
-    left: 34%;
-    width: 112px !important;
-    height: 59px !important;
+    left: 35%;
+    width: 115px !important;
+    height: 62px !important;
+  }
+}
+@media (max-width: 265px) {
+  .hero .image .inner_image {
+    
+    top: 36%;
+    left: 35%;
+    width: 109px !important;
+    height: 62px !important;
   }
 }
 @media (max-width: 260px) {
   .hero .image .inner_image {
     top: 36%;
     left: 34%;
-    width: 116px !important;
+    width: 107px !important;
     height: 59px !important;
   }
 }
 @media (max-width: 250px) {
+  .hero .image .inner_image {
+    top: 36%;
+    left: 33%;
+    width: 106px !important;
+    height: 53px !important;
+  }
+}
+@media (max-width: 240px) {
   .hero .image .inner_image {
     top: 36%;
     left: 33%;
