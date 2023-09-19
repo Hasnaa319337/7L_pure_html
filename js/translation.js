@@ -49,6 +49,8 @@ const more_about = document.getElementById("more_about");
 /* Start:: Projects Section */
 const projects_title = document.getElementById("projects_title");
 const projects_more = document.getElementById("projects_more");
+const projects_more1 = document.getElementById("projects_more1");
+const projects_more2 = document.getElementById("projects_more2");
 
 /* End:: Projects Section */
 
@@ -90,14 +92,19 @@ const lCart = document.getElementById("lCart");
 const copyRight = document.getElementById("copyRight");
 /* End:: Footer*/
 const languageSelect = document.getElementById("language-select");
+const languageSelect2 = document.getElementById("language-select2");
 
-languageSelect.addEventListener("change", function () {
+languageSelect.addEventListener("click", function () {
   localStorage.setItem("language", languageSelect.value);
-  if (localStorage.getItem("language") === "ar") {
+
     // arabic code here
 
     // arBtn.classList.add("hide_icon");
     // enBtn.classList.add("show_icon");
+
+    languageSelect.classList.add("hide_icon");
+    languageSelect2.classList.remove("hide_icon");
+
     document.getElementById("next").classList.add("hide_icon");
     document.getElementById("prev").classList.remove("hide_icon");
 
@@ -163,6 +170,8 @@ languageSelect.addEventListener("change", function () {
     // Start:: projects Section
     projects_title.textContent = "مشاريعنا";
     projects_more.textContent = "إقرأ المزيد";
+    projects_more1.textContent = "إقرأ المزيد";
+    projects_more2.textContent = "إقرأ المزيد";
 
     // End:: projects Section
 
@@ -202,7 +211,20 @@ languageSelect.addEventListener("change", function () {
     lCart.textContent = "حل كارت";
     copyRight.textContent = "جميع الحقوق محفوظة لشركة حل سوفت 2023";
     /* End:: Footer Translation*/
-  } else {
+  
+});
+
+
+
+
+
+languageSelect2.addEventListener("click", function () {
+  localStorage.setItem("language", languageSelect2.value);
+ 
+
+    languageSelect.classList.remove("hide_icon");
+    languageSelect2.classList.add("hide_icon");
+    console.log('sssssssssssss')
     // localStorage.setItem("language", languageSelect.value);
     // english code here
     document.getElementById("prev").classList.add("hide_icon");
@@ -267,6 +289,8 @@ languageSelect.addEventListener("change", function () {
     // Start:: projects Section
     projects_title.textContent = "Our Projects";
     projects_more.textContent = "More";
+    projects_more1.textContent = "More";
+    projects_more2.textContent = "More";
   
     // End:: projects Section
 
@@ -307,5 +331,5 @@ languageSelect.addEventListener("change", function () {
     lCart.textContent = "7l Cart";
     copyRight.textContent = "All rights reserved to 7L Soft Company 2023";
     /* End:: Footer Translation*/
-  }
+  
 });

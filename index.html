@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="images/Group 2222222 1.png" />
-    <title>7L Website</title>
+    <title>7L - حل</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet"  href="css/owl.carousel.min.css" />
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -48,10 +48,11 @@
                 justify-items: center;
               "
             >
-              <img src="images/Group 2222222 1.png" :alt="logo" />
+              <img src="images/Group 2222222 1.png" alt="logo" />
               <img
+
                 src="images/Group 2222222 2.png"
-                :alt="logo"
+                alt="logo"
                 style="margin: 0 5px"
               />
             </a>
@@ -109,7 +110,7 @@
                 <a class="nav-link" href="#" id="contact"> Contact Us</a>
               </li>
               <li>
-                <select
+                <!-- <select
                   id="language-select"
                   style="border: none; outline: none"
                 >
@@ -119,7 +120,9 @@
                   <option value="ar" style="border: none; outline: none">
                     العربية
                   </option>
-                </select>
+                </select> -->
+                <button type="menu" id="language-select" value="ar" class="switch_button">العربية</button>
+                <button type="menu" id="language-select2" value="en" class="switch_button hide_icon">English</button>
               </li>
             </ul>
           </div>
@@ -154,16 +157,16 @@
             </div>
             <div class="col col-lg-7 col-sm-12">
               <div class="image">
-                <img src="images/hero_cut.svg" alt="" />
+                <img src="images/hero_cut2.svg" alt="" />
                 <img
                   id="first_inner_image"
-                  class="inner_image first_inner_image"
+                  class="inner_image first_inner_image top_en"
                   src="images/cut.png"
                   alt=""
                 />
                 <img
                   id="second_inner_image"
-                  class="inner_image second_inner_image"
+                  class="inner_image second_inner_image top_en"
                   src="images/image 5.png"
                   alt=""
                 />
@@ -180,7 +183,7 @@
         <div class="line"></div>
         <div class="container" style="padding: 0">
           <div class="row">
-            <div class="col col-lg-2 col-md-4 col-sm-12">
+            <div class="col col-lg-2 col-md-4 col-sm-6">
               <div class="service">
                 <div class="image">
                   <img src="images/customer-care.png" alt="" />
@@ -188,7 +191,7 @@
                 <h5 class="title" id="techSupport">Free technical support</h5>
               </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-12">
+            <div class="col col-lg-2 col-md-4 col-sm-6">
               <div class="service">
                 <div class="image">
                   <img src="images/lock.png" alt="" />
@@ -198,7 +201,7 @@
                 </h5>
               </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-12">
+            <div class="col col-lg-2 col-md-4 col-sm-6">
               <div class="service">
                 <div class="image">
                   <img src="images/operation.png " alt="" />
@@ -208,7 +211,7 @@
                 </h5>
               </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-12">
+            <div class="col col-lg-2 col-md-4 col-sm-6">
               <div class="service">
                 <div class="image">
                   <img src="images/encryption.png" alt="" />
@@ -218,7 +221,7 @@
                 </h5>
               </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-12">
+            <div class="col col-lg-2 col-md-4 col-sm-6">
               <div class="service">
                 <div class="image">
                   <img src="images/office-building.png" alt="" />
@@ -228,7 +231,7 @@
                 </h5>
               </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-12">
+            <div class="col col-lg-2 col-md-4 col-sm-6">
               <div class="service">
                 <div class="image">
                   <img src="images/office-building.png" alt="" />
@@ -358,25 +361,37 @@
           <h3 class="main_text" id="projects_title">Our Projects</h3>
           <div class="slider" style="width: 100%">
             <div class="start_carve"></div>
-           
+
             <div class="owl-carousel">
               <div class="slider-card first_slider_card">
-                <div class="image" >
+                <div class="image">
                   <img
                     src="images/screencapture-efatorh-2023-06-20-21_59_00 1.png"
                     alt=""
                   />
+                  <button class="global_btn projectsBtn" id="projects_more">
+                    Read More 
+                  </button>
                 </div>
+              
               </div>
               <div class="pro_div">
                 <div class="slider-card first_slider_card">
                   <img src="images/flutter.png" alt="" />
+                  <button class="global_btn projectsBtn" id="projects_more1">
+                    Read More 
+                  </button>
                 </div>
+             
               </div>
               <div class="slider-card first_slider_card">
                 <div class="image">
-                  <img src="images/pos.png" />
+                  <img src="images/pos.png" alt=""/>
+                  <button class="global_btn projectsBtn" id="projects_more2">
+                    Read More 
+                  </button>
                 </div>
+         
               </div>
             </div>
 
@@ -387,314 +402,338 @@
           </div>
         </div>
       </section>
-      <button class="global_btn projectsBtn" id="projects_more">
-        Read More
-      </button>
+     
     </div>
     <!-- End:: projects -->
 
     <!-- Start:: cusomers section -->
     <div class="customers">
       <h3 class="main_text" id="customerTitle">Customers Opinions</h3>
-
-      <div class="slider_container" id="slider_container">
-        <!-- <div class="inner_slider_container"> -->
-        <div class="box" id="item1">
-          <div class="customer_info">
-            <h3>يوسف طه</h3>
-            <span> مصمم </span>
-            <ul style="text-align: start">
-              <li>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-              </li>
-            </ul>
-          </div>
-          <div class="customer_image dir_left" id="customer_image">
-            <img src="images/image 10.png" alt="" />
-          </div>
-          <div class="empty" style="width: 10%"></div>
-          <div class="customer_opinion">
-            <p>
-              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
-              سيلهي القارئ
-            </p>
-          </div>
+      <section class=" pb-5">
+        <div class="container">
+            <div class="row">
+            
+              
+                    <a  onclick="goPrevious()"    id="prev" class=" mb-3  prev hide_icon" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                    <a  onclick="goNext()"  id="next" class=" mb-3   next " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+              
+                <div class="col-12">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+    
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+    
+                                   
+                                    <div class="col-lg-6 col-md-6 mb-6">
+                                      <div class="box" id="item1">
+                                        <div class="customer_info">
+                                          <h3>يوسف طه</h3>
+                                          <span> مصمم </span>
+                                          <ul style="text-align: start">
+                                            <li>
+                                              <svg
+                                                style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                height="1em"
+                                                viewBox="0 0 576 512"
+                                              >
+                                                <path
+                                                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                                />
+                                              </svg>
+                                              <svg
+                                                style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                height="1em"
+                                                viewBox="0 0 576 512"
+                                              >
+                                                <path
+                                                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                                />
+                                              </svg>
+                                              <svg
+                                                style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                height="1em"
+                                                viewBox="0 0 576 512"
+                                              >
+                                                <path
+                                                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                                />
+                                              </svg>
+                                              <svg
+                                                style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                height="1em"
+                                                viewBox="0 0 576 512"
+                                              >
+                                                <path
+                                                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                                />
+                                              </svg>
+                                              <svg
+                                                style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                height="1em"
+                                                viewBox="0 0 576 512"
+                                              >
+                                                <path
+                                                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                                />
+                                              </svg>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                        <div class="customer_image dir_left" id="customer_image">
+                                          <img src="images/image 10.png" alt="" />
+                                        </div>
+                                        <div class="empty" style="width: 10%"></div>
+                                        <div class="customer_opinion">
+                                          <p>
+                                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                            سيلهي القارئ
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-6">
+                                      <div class="box" id="item1">
+                                        <div class="customer_info">
+                                          <h3>يوسف طه</h3>
+                                          <span> مصمم </span>
+                                          <ul style="text-align: start">
+                                            <li>
+                                              <svg
+                                                style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                height="1em"
+                                                viewBox="0 0 576 512"
+                                              >
+                                                <path
+                                                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                                />
+                                              </svg>
+                                              <svg
+                                                style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                height="1em"
+                                                viewBox="0 0 576 512"
+                                              >
+                                                <path
+                                                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                                />
+                                              </svg>
+                                              <svg
+                                                style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                height="1em"
+                                                viewBox="0 0 576 512"
+                                              >
+                                                <path
+                                                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                                />
+                                              </svg>
+                                              <svg
+                                                style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                height="1em"
+                                                viewBox="0 0 576 512"
+                                              >
+                                                <path
+                                                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                                />
+                                              </svg>
+                                              <svg
+                                                style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                height="1em"
+                                                viewBox="0 0 576 512"
+                                              >
+                                                <path
+                                                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                                />
+                                              </svg>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                        <div class="customer_image dir_left" id="customer_image2">
+                                          <img src="images/image 10.png" alt="" />
+                                        </div>
+                                        <div class="empty" style="width: 10%"></div>
+                                        <div class="customer_opinion">
+                                          <p>
+                                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                            سيلهي القارئ
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+    
+                                  <div class="col-lg-6 col-md-6 mb-6">
+                                    <div class="box" id="item1">
+                                      <div class="customer_info">
+                                        <h3>يوسف طه</h3>
+                                        <span> مصمم </span>
+                                        <ul style="text-align: start">
+                                          <li>
+                                            <svg
+                                              style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              height="1em"
+                                              viewBox="0 0 576 512"
+                                            >
+                                              <path
+                                                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                              />
+                                            </svg>
+                                            <svg
+                                              style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              height="1em"
+                                              viewBox="0 0 576 512"
+                                            >
+                                              <path
+                                                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                              />
+                                            </svg>
+                                            <svg
+                                              style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              height="1em"
+                                              viewBox="0 0 576 512"
+                                            >
+                                              <path
+                                                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                              />
+                                            </svg>
+                                            <svg
+                                              style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              height="1em"
+                                              viewBox="0 0 576 512"
+                                            >
+                                              <path
+                                                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                              />
+                                            </svg>
+                                            <svg
+                                              style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              height="1em"
+                                              viewBox="0 0 576 512"
+                                            >
+                                              <path
+                                                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                              />
+                                            </svg>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                      <div class="customer_image dir_left" id="customer_image3">
+                                        <img src="images/image 10.png" alt="" />
+                                      </div>
+                                      <div class="empty" style="width: 10%"></div>
+                                      <div class="customer_opinion">
+                                        <p>
+                                          هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                          سيلهي القارئ
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 col-md-6 mb-6">
+                                    <div class="box" id="item1">
+                                      <div class="customer_info">
+                                        <h3>يوسف طه</h3>
+                                        <span> مصمم </span>
+                                        <ul style="text-align: start">
+                                          <li>
+                                            <svg
+                                              style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              height="1em"
+                                              viewBox="0 0 576 512"
+                                            >
+                                              <path
+                                                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                              />
+                                            </svg>
+                                            <svg
+                                              style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              height="1em"
+                                              viewBox="0 0 576 512"
+                                            >
+                                              <path
+                                                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                              />
+                                            </svg>
+                                            <svg
+                                              style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              height="1em"
+                                              viewBox="0 0 576 512"
+                                            >
+                                              <path
+                                                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                              />
+                                            </svg>
+                                            <svg
+                                              style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              height="1em"
+                                              viewBox="0 0 576 512"
+                                            >
+                                              <path
+                                                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                              />
+                                            </svg>
+                                            <svg
+                                              style="fill: rgba(19, 123, 151, 1); width: 13px"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              height="1em"
+                                              viewBox="0 0 576 512"
+                                            >
+                                              <path
+                                                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                              />
+                                            </svg>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                      <div class="customer_image dir_left" id="customer_image4">
+                                        <img src="images/image 10.png" alt="" />
+                                      </div>
+                                      <div class="empty" style="width: 10%"></div>
+                                      <div class="customer_opinion">
+                                        <p>
+                                          هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                          سيلهي القارئ
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+    
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="box" id="item2">
-          <div class="customer_info">
-            <h3>رضا محمد</h3>
-            <span> مصمم </span>
-            <ul style="text-align: start">
-              <li>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-              </li>
-            </ul>
-          </div>
-          <div class="customer_image dir_left" id="customer_image2">
-            <img src="images/image 9.png" alt="" />
-          </div>
-          <div class="empty" style="width: 10%"></div>
-          <div class="customer_opinion">
-            <p>
-              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
-              سيلهي القارئ
-            </p>
-          </div>
-        </div>
-        <div class="box" id="item3" style="width: 50%">
-          <div class="customer_info">
-            <h3>يوسف طه</h3>
-            <span> مصمم </span>
-            <ul style="text-align: start">
-              <li>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-              </li>
-            </ul>
-          </div>
-          <div class="customer_image dir_left" id="customer_image3">
-            <img src="images/image 10.png" alt="" />
-          </div>
-          <div class="empty" style="width: 10%"></div>
-          <div class="customer_opinion">
-            <p>
-              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
-              سيلهي القارئ
-            </p>
-          </div>
-        </div>
-        <div class="box" id="item4">
-          <div class="customer_info">
-            <h3>يوسف طه</h3>
-            <span> مصمم </span>
-            <ul style="text-align: start">
-              <li>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-                <svg
-                  style="fill: rgba(19, 123, 151, 1); width: 13px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  />
-                </svg>
-              </li>
-            </ul>
-          </div>
-          <div class="customer_image dir_left" id="customer_image4">
-            <img src="images/image 10.png" alt="" />
-          </div>
-          <div class="empty" style="width: 10%"></div>
-          <div class="customer_opinion">
-            <p>
-              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
-              سيلهي القارئ
-            </p>
-          </div>
-        </div>
-
-        <!-- </div> -->
-
-        <a
-          id="prev"
-          class="prev hide_icon"
-          onclick="goPrevious()"
-          style="
-            position: absolute;
-            left: 0;
-            border: 1px solid rgba(209, 209, 209, 1);
-          "
-          >❮</a
-        >
-        <a id="next" class="next" onClick="goNext()">❯</a>
-      </div>
+    </section>
+     
     </div>
     <!-- End:: cusomers section -->
 
@@ -952,6 +991,8 @@
         All rights reserved to 7L Soft Company &copy 2023
       </p>
     </div>
+
+  
     <!-- End :: Footer Section -->
 
     <!-- jQuery library -->
@@ -973,9 +1014,39 @@
 
       document
         .querySelector("#language-select")
-        .addEventListener("change", function () {
+        .addEventListener("click", function () {
           setLang(this.value);
         });
+        document
+        .querySelector("#language-select2")
+        .addEventListener("click", function () {
+          setLang(this.value);
+        });
+
+
+        
+function goNext() {
+
+
+  document.getElementById("next").classList.remove("show_icon");
+  document.getElementById("prev").classList.remove("hide_icon");
+
+  document.getElementById("next").classList.add("hide_icon");
+  document.getElementById("prev").classList.add("show_icon");
+
+  console.log('sddddd0');
+}
+
+function goPrevious() {
+
+  document.getElementById("next").classList.remove("hide_icon");
+  document.getElementById("prev").classList.remove("show_icon");
+
+  document.getElementById("next").classList.add("show_icon");
+  document.getElementById("prev").classList.add("hide_icon");
+
+  console.log('sddddd');
+}
     </script>
   </body>
 </html>
