@@ -116,8 +116,8 @@ languageSelect.addEventListener("click", function () {
     small_rectangle.classList.add("small_in_en");
     second_small_rectangle.classList.add("second_small_in_en");
 
-    hidden_border.classList.add("hidden_border_ar");
-    hidden_border.classList.remove("hidden_border");
+    // hidden_border.classList.add("hidden_border_ar");
+    // hidden_border.classList.remove("hidden_border");
 
     customer_image.classList.remove("dir_left");
     customer_image.classList.add("dir_right");
@@ -233,8 +233,8 @@ languageSelect2.addEventListener("click", function () {
     exampleElement.classList.remove("rtl");
     exampleElement.classList.add("ltr");
 
-    hidden_border.classList.remove("hidden_border_ar");
-    hidden_border.classList.add("hidden_border");
+    // hidden_border.classList.remove("hidden_border_ar");
+    // hidden_border.classList.add("hidden_border");
 
     customer_image.classList.remove("dir_right");
     customer_image.classList.add("dir_left");

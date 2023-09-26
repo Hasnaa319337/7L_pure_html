@@ -68,7 +68,7 @@ a {
   font-size: 40px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   line-height: 44.64px;
 }
 .second_head {
@@ -84,9 +84,8 @@ a {
 .projects,
 .customers,
 .contact {
-  margin-bottom: 150px !important;
   height: 100%;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 @media (max-width: 991px) {
   .hero,
@@ -212,7 +211,7 @@ a {
 .service {
   border: 1px solid rgba(219, 219, 219, 1);
   border-top-left-radius: 83px;
-  margin: auto;
+  margin: auto 0;
   text-align: center;
   padding: 32px 15px;
 
@@ -251,7 +250,7 @@ a {
 .services .line {
   height: 3px;
   border-bottom: 1px solid rgba(219, 219, 219, 1);
-  width: 13%;
+  width: 10% !important;
 }
 /* End:: Services Section */
 
@@ -829,8 +828,13 @@ input::placeholder {
 /* End:: About Section */
 
 /* Start:: Projects Section*/
-
+@media (max-width:650px) {
+  .projects {
+    margin-bottom: 90px !important; 
+  }
+}
 .projects {
+  margin-bottom: 190px;
   position: relative;
   padding: 0;
   direction: ltr !important;
@@ -841,7 +845,7 @@ input::placeholder {
   border-bottom: 1px solid #dbdbdb;
   height: 100%;
   width: 100%;
-  bottom: 40%;
+  bottom: 46%;
 }
 .projects .global_btn {
   z-index: 5000000;
@@ -1004,6 +1008,10 @@ input::placeholder {
   }
   .pro_div {
     margin: 35px 0 !important;
+
+  }
+  .pro_div .slider-card{
+ 
   }
   .projects .end_carve {
     /* height: 100px !important;
@@ -1092,6 +1100,10 @@ input::placeholder {
 
 /* Start:: Customers*/
 
+.customers {
+  margin-bottom: 90px;
+}
+
 .customers .slider_container {
   display: flex;
   height: 400px;
@@ -1100,13 +1112,25 @@ input::placeholder {
   scroll-behavior: smooth;
   margin: auto;
 }
+.carousel.pointer-event {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y !important;
+  cursor: pointer;
+}
+@media (max-width: 997px) {
+  .mobileCarousel {
+    display: block !important;
+  }
+  .desktopCarousel {
+    display: none;
+  }
+}
 
 .customers .slider_container::-webkit-scrollbar {
   display: none;
 }
 .customers .col-lg-6 {
   margin: 13px 0;
-  padding-left: 0 !important;
 }
 .customers .box {
   height: 300px;
@@ -1131,7 +1155,7 @@ input::placeholder {
   }
   .customers .customer_opinion p {
     font-size: 14px !important;
-    margin: 4px 7px !important;
+    margin: 4px 21px !important;
 
     line-height: 23px !important;
   }
@@ -1262,9 +1286,6 @@ input::placeholder {
   }
 }
 @media (max-width: 991px) {
-  .carousel-inner {
-    margin-left: 20px;
-  }
   .customers .box {
     width: 95%;
     display: block !important;
@@ -1380,7 +1401,7 @@ input::placeholder {
 .slider {
   margin-bottom: 30px;
 
-  height: 392px;
+  height: 370px;
   border: 1px solid rgba(219, 219, 219, 1);
   position: relative;
   border-radius: 0px 147px 0px 164px;
@@ -1403,17 +1424,23 @@ input::placeholder {
   border-radius: 0 0 0 160px;
   position: absolute;
 
-  left: 12px;
+  left: 4px;
 }
 
 .slider .owl-item.active.center .slider-card {
+  /* background: url('../images/cardMask.svg'); */
+  width: 100% ;
+  height: 100%;
+  background-size: cover;
   transform: scale(0.9);
   opacity: 1;
   width: 100%;
   height: 401px;
   padding: 10px;
   color: #fff;
-  background: rgba(95, 198, 226, 0.9);
+  background-image: linear-gradient(rgba(95, 198, 226, 0.9), rgba(95, 198, 226, 0.9)), url('../images/cardMask.svg');
+
+  /* background: rgba(95, 198, 226, 0.9); */
   opacity: 0.8;
   text-align: center;
   color: #fff;
@@ -1422,13 +1449,18 @@ input::placeholder {
   margin-left: 6px;
   border-radius: 0;
 }
+.projects .global_btn {
+  height: 60px;
+}
 .slider .owl-item.active.center .slider-card img {
   border: 1px solid #fff;
   padding: 5px;
   border-radius: 0;
+  opacity: .8;
+  
 }
 .slider-card {
-  height: 350px;
+  height: 330px;
   width: 350px;
   background: transparent;
   padding: 0px 0px;
@@ -1486,25 +1518,25 @@ input::placeholder {
 .slider .start_carve {
   background: rgba(19, 123, 151, 1);
   border-radius: 0px 0px 153px 0px;
+  Width: 159.89px;
   height: 159.89px;
-  width: 159px;
   transform: rotate(270deg);
-  right: 0px !important;
-  top: -43px !important;
+  right: -3px !important;
+  top: -42px !important;
   position: absolute;
 }
 .slider .end_carve {
   border-radius: 0px 0px 160px 0px;
   background: rgba(104, 191, 254, 1);
-  height: 150px;
+  height: 170px;
   width: 150px;
   transform: rotate(91deg);
 }
 .owl-carousel {
   position: absolute;
-  left: 16px;
+  left: 23px;
   width: 96%;
-  top: -44px;
+  top: -45px;
 }
 .owl-carousel.owl-drag .owl-item {
   margin-right: 10px !important;
@@ -1611,8 +1643,8 @@ input::placeholder {
 
 @media (max-width: 400px) {
   .projects .global_btn {
-    left: 27% !important;
-    bottom: -11px !important;
+    left: 25% !important;
+    bottom: -21px !important;
   }
 }
 @media (max-width: 350px) {
@@ -2187,7 +2219,6 @@ input::placeholder {
 }
 @media (max-width: 270px) {
   .hero .image .inner_image {
-    
     top: 36%;
     left: 35%;
     width: 115px !important;
@@ -2196,7 +2227,6 @@ input::placeholder {
 }
 @media (max-width: 265px) {
   .hero .image .inner_image {
-    
     top: 36%;
     left: 35%;
     width: 109px !important;
@@ -2338,4 +2368,72 @@ input::placeholder {
   .services .service h5 {
     line-height: 14px;
   }
+}
+@media (max-width: 768px) {
+  .services .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .services  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.services  .carousel-inner .carousel-item.active,
+.services .carousel-inner .carousel-item-next,
+.services .carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* display 3 */
+
+.services .carousel-inner .carousel-item-right,
+.services .carousel-inner .carousel-item-left {
+  transform: translateX(0);
+}
+
+.services .carousel-control-prev,
+.services .carousel-control-next {
+  display: none;
+}
+.services .carousel-control-prev span,
+.services .carousel-control-next span {
+  display: block;
+  padding: 2px 5px;
+  width: 27px;
+  height: 27px;
+  font-size: 13px;
+}
+
+@media (max-width: 997px) {
+  .services .carousel-control-prev,
+  .services .carousel-control-next {
+    display: flex !important;
+    margin: 0 10px;
+  }
+
+  .services .line {
+    display: none;
+  }
+}
+.services .col {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+@media (max-width: 650px) {
+  .services .service {
+    margin: 0 auto;
+
+    width: 200px !important;
+  }
+}
+
+.line_right {
+  right: 0;
+}
+
+.line_left {
+  left: 0;
 }
