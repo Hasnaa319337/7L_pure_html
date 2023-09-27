@@ -214,7 +214,7 @@ a {
   margin: auto 0;
   text-align: center;
   padding: 32px 15px;
-
+background: #fff;
   margin-bottom: 37px;
   transition: all ease-in-out 0.3s;
   width: 172px;
@@ -1120,6 +1120,7 @@ input::placeholder {
 @media (max-width: 997px) {
   .mobileCarousel {
     display: block !important;
+    width: fit-content !important;
   }
   .desktopCarousel {
     display: none;
@@ -1445,7 +1446,7 @@ input::placeholder {
   text-align: center;
   color: #fff;
   padding: 8px;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   margin-left: 6px;
   border-radius: 0;
 }
@@ -1554,7 +1555,7 @@ input::placeholder {
 
 @media (max-width: 999px) {
   .owl-carousel {
-    top: -87px;
+    top: 0;
   }
   .slider .owl-item.active.center .slider-card {
     opacity: 1;
@@ -1591,7 +1592,7 @@ input::placeholder {
 }
 @media (max-width: 540px) {
   .owl-carousel {
-    top: -10px !important;
+    top: 0 !important;
   }
   .projects .global_btn {
     z-index: 5000000;

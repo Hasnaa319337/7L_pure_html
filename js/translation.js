@@ -15,6 +15,10 @@ const customer_image = document.getElementById("customer_image");
 const customer_image2 = document.getElementById("customer_image2");
 const customer_image3 = document.getElementById("customer_image3");
 const customer_image4 = document.getElementById("customer_image4");
+const customer_image5 = document.getElementById("customer_image5");
+const customer_image6 = document.getElementById("customer_image6");
+const customer_image7 = document.getElementById("customer_image7");
+const customer_image8 = document.getElementById("customer_image8");
 
 const svgCart = document.getElementById("svgCart");
 const svgFatora = document.getElementById("svgFatora");
@@ -52,16 +56,20 @@ const projects_more = document.getElementById("projects_more");
 const projects_more1 = document.getElementById("projects_more1");
 const projects_more2 = document.getElementById("projects_more2");
 
+
+
 /* End:: Projects Section */
 
 /* Start:: customers Section */
 const customerTitle = document.getElementById("customerTitle");
+const changedLine = document.getElementById("changedLine");
+
 /* End:: customers Section */
 
 /* Start:: Services Section*/
 const techSupport = document.getElementById("techSupport");
-const security = document.getElementById("security");
-const updates = document.getElementById("updates");
+const security = document.getElementsByClassName("security");
+const updates = document.getElementsByClassName("updates");
 const fullSecurity = document.getElementById("fullSecurity");
 const differentProgrames = document.getElementById("differentProgrames");
 const specialProgrammes = document.getElementById("specialProgrammes");
@@ -102,6 +110,9 @@ languageSelect.addEventListener("click", function () {
     // arBtn.classList.add("hide_icon");
     // enBtn.classList.add("show_icon");
 
+
+
+
     languageSelect.classList.add("hide_icon");
     languageSelect2.classList.remove("hide_icon");
 
@@ -116,8 +127,8 @@ languageSelect.addEventListener("click", function () {
     small_rectangle.classList.add("small_in_en");
     second_small_rectangle.classList.add("second_small_in_en");
 
-    // hidden_border.classList.add("hidden_border_ar");
-    // hidden_border.classList.remove("hidden_border");
+    hidden_border.classList.add("hidden_border_ar");
+    hidden_border.classList.remove("hidden_border");
 
     customer_image.classList.remove("dir_left");
     customer_image.classList.add("dir_right");
@@ -129,8 +140,19 @@ languageSelect.addEventListener("click", function () {
     customer_image3.classList.add("dir_right");
 
     customer_image4.classList.remove("dir_left");
-
     customer_image4.classList.add("dir_right");
+
+    customer_image5.classList.remove("dir_left");
+    customer_image5.classList.add("dir_right");
+
+    customer_image6.classList.remove("dir_left");
+    customer_image6.classList.add("dir_right");
+
+    customer_image7.classList.remove("dir_left");
+    customer_image7.classList.add("dir_right");
+
+    customer_image8.classList.remove("dir_left");
+    customer_image8.classList.add("dir_right");
 
     first_inner_image.classList.remove("top_en");
     first_inner_image.classList.add("top_ar");
@@ -149,9 +171,9 @@ languageSelect.addEventListener("click", function () {
     /* Start:: Header Translation*/
     home.textContent = "الرئيسية";
     aboutUs.textContent = "من نحن";
-    ourServices.textContent = "اتصل بنا";
+    contact.textContent = "اتصل بنا";
     ourProject.textContent = "خدماتنا";
-    contact.textContent = "أعمالنا";
+    ourServices.textContent = "أعمالنا";
 
     /* End:: Header Translation*/
 
@@ -177,6 +199,9 @@ languageSelect.addEventListener("click", function () {
 
     // Start:: customers Section
     customerTitle.textContent = "اَراء عملاؤنا";
+
+    changedLine.classList.add('line_left');
+    changedLine.classList.remove('line_right');
     // End:: customers Section
 
     /* Start:: Services Sections */
@@ -233,8 +258,8 @@ languageSelect2.addEventListener("click", function () {
     exampleElement.classList.remove("rtl");
     exampleElement.classList.add("ltr");
 
-    // hidden_border.classList.remove("hidden_border_ar");
-    // hidden_border.classList.add("hidden_border");
+    hidden_border.classList.remove("hidden_border_ar");
+    hidden_border.classList.add("hidden_border");
 
     customer_image.classList.remove("dir_right");
     customer_image.classList.add("dir_left");
@@ -248,6 +273,17 @@ languageSelect2.addEventListener("click", function () {
     customer_image4.classList.remove("dir_right");
     customer_image4.classList.add("dir_left");
 
+    customer_image5.classList.remove("dir_right");
+    customer_image5.classList.add("dir_left");
+
+    customer_image6.classList.remove("dir_right");
+    customer_image6.classList.add("dir_left");
+
+    customer_image7.classList.remove("dir_right");
+    customer_image7.classList.add("dir_left");
+
+    customer_image8.classList.remove("dir_right");
+    customer_image8.classList.add("dir_left");
 
     small_rectangle.classList.remove("small_in_en");
     second_small_rectangle.classList.remove("second_small_in_en");
@@ -306,6 +342,9 @@ languageSelect2.addEventListener("click", function () {
 
     //Start:: Customers Section
     customerTitle.textContent = "Customers Opinions";
+    changedLine.classList.remove('line_left');
+    changedLine.classList.add('line_right');
+
     // End:: Customers Section
 
     /* Start:: contact Section*/
