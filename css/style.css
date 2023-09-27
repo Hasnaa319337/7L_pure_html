@@ -1109,9 +1109,8 @@ input::placeholder {
   height: 400px;
   padding: 0 14px;
   width: 83%;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
   margin: auto;
-  overflow: hidden;
 }
 .carousel.pointer-event {
   -ms-touch-action: pan-y;
@@ -1121,7 +1120,7 @@ input::placeholder {
 @media (max-width: 997px) {
   .mobileCarousel {
     display: block !important;
-    width: fit-content !important;
+  overflow: hidden;
   }
   .desktopCarousel {
     display: none;
