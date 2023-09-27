@@ -68,11 +68,19 @@ const changedLine = document.getElementById("changedLine");
 
 /* Start:: Services Section*/
 const techSupport = document.getElementById("techSupport");
-const security = document.getElementsByClassName("security");
-const updates = document.getElementsByClassName("updates");
+const security = document.getElementById("security");
+const updates = document.getElementById("updates");
 const fullSecurity = document.getElementById("fullSecurity");
 const differentProgrames = document.getElementById("differentProgrames");
 const specialProgrammes = document.getElementById("specialProgrammes");
+
+
+const techSupport2 = document.getElementById("techSupport2");
+const security2 = document.getElementById("security2");
+const updates2 = document.getElementById("updates2");
+const fullSecurity2 = document.getElementById("fullSecurity2");
+const differentProgrames2 = document.getElementById("differentProgrames2");
+const specialProgrammes2 = document.getElementById("specialProgrammes2");
 
 /* End:: Services Section*/
 
@@ -211,6 +219,13 @@ languageSelect.addEventListener("click", function () {
     fullSecurity.textContent = "امن وتشفير كامل";
     differentProgrames.textContent = "برامج مخصصة بدقة لمختلف أحجام المؤسسات";
     specialProgrammes.textContent = "برامج مخصصة بدقة";
+
+    techSupport2.textContent = "دعم فني مجاناً";
+    security2.textContent = "أمن وتشفير المعلومات";
+    updates2.textContent = "تحديثات دورية مجانية لبرامجنا";
+    fullSecurity2.textContent = "امن وتشفير كامل";
+    differentProgrames2.textContent = "برامج مخصصة بدقة لمختلف أحجام المؤسسات";
+    specialProgrammes2.textContent = "برامج مخصصة بدقة";
     /* End:: Services Sections */
 
     /* Start:: contact Section*/
@@ -338,6 +353,16 @@ languageSelect2.addEventListener("click", function () {
     differentProgrames.textContent =
       "Strictly customized software for organizations of all sizes";
     specialProgrammes.textContent = "Strictly customized software";
+
+
+
+    techSupport2.textContent = "Free technical support";
+    security2.textContent = "Information security and encryption";
+    updates2.textContent = "Free periodic updates to our software";
+    fullSecurity2.textContent = "Full security and encryption";
+    differentProgrames2.textContent =
+      "Strictly customized software for organizations of all sizes";
+    specialProgrammes2.textContent = "Strictly customized software";
     /* End:: Services Sections */
 
     //Start:: Customers Section

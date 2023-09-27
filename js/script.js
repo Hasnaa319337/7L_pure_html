@@ -11,7 +11,7 @@ $(document).ready(function () {
     margin: 10,
     nav: true,
     autoplay: false,
-    autoplayTimeout: 8000,
+    autoplayTimeout: 5000,
     autoplayHoverPause: true,
     center: true,
     navText: [
