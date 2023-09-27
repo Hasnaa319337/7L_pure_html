@@ -1109,7 +1109,7 @@ input::placeholder {
   height: 400px;
   padding: 0 14px;
   width: 83%;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   margin: auto;
 }
 .carousel.pointer-event {
