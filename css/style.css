@@ -1111,6 +1111,7 @@ input::placeholder {
   width: 83%;
   /* scroll-behavior: smooth; */
   margin: auto;
+  overflow: hidden;
 }
 .carousel.pointer-event {
   -ms-touch-action: pan-y;
